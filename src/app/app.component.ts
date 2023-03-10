@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-demo';
+  name = '';
+  age = '';
+  city = '';
+
+  getValues(val:any)
+  { 
+    this.name = val.user;
+    this.age = val.age;
+    this.city = val.city;  
+  }
 }
